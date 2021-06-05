@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "node test/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
