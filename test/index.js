@@ -4,16 +4,15 @@ import cacheTests from './cache.js'
 
 async function t(){
 
-  let date = '2021-06-05'
+  let input = '2021-01-01'
   let expected = {
-    date,
-    median:0,
-    mean:0,
+    date: input,
+    mean: -700.7,
+    median: -22.55,
   }
 
-  let output = await weatherAPI(date)
-
-  a.deepEqual(output, expected, 'nope')
+  let output = await weatherAPI(input)
+  a.deepEqual(output, expected, 'Not the output we were expecting')
 }
 
 cacheTests()
